@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+  - set_fact:
+       fact_time: "{{ lookup('pipe', 'date +%Y-%m-%d@$H:%M:%S') }}"
+  - debug: var=fact_time
+  - command: sleep 2
+  - debug: var=fact_time

@@ -1,0 +1,7 @@
+- hosts: all
+  tasks:
+  - name: Disable root login via SSH.
+    lineinfile:
+      dest: /etc/ssh/sshd_config
+      regexp: "^PermitRootLogin"
+      line: "PermitRootLogin no"  

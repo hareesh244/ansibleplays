@@ -1,0 +1,16 @@
+- hosts: all
+  tasks:
+  - name: i am block
+    block:
+    - package: 
+        name: "httpd123"
+        state: present
+    - copy:
+        content: "Hi hareesh"
+        dest: "/var/www/html/index.html"
+    - service:
+        name: "httpd"
+        state: started
+    rescue:
+    - debug:
+        msg: "actual code is not working"

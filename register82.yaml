@@ -1,0 +1,8 @@
+- hosts: all
+  tasks:
+  - command: date  
+  - package: "name=httpd123 state=present"
+    register: x
+    ignore_errors: yes
+  - debug:
+      var: x

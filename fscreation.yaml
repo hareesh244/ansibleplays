@@ -1,0 +1,55 @@
+- name: New file system creation
+  hosts: all
+  tasks:
+  - name: Install lvm software
+    package:
+      name: "lvm2"
+      state: present
+  - name: Create partition
+    parted:
+      device: "/dev/xvdf"
+      number: 1
+      flags: [ lvm ]
+      state: present
+      part_end: "2GB"
+  - name: create volume group(vg)
+    lvg:
+      vg: "vg01"
+      pvs: "/dev/xvdf1"
+  - name: create logical volume(lv)
+    lvol:
+      vg: "vg01"
+      lv: "oraclevol"
+      size: 1024
+      force: yes
+  - name: file system creation
+    filesystem:
+      fstype: "xfs"
+      dev: "/dev/vg01/oraclevol"
+  - name: To create mountpoint direcotry(/oradba)
+    file:
+      path: "/oradba"
+      state: directory
+      mode: "0755" 
+  - name: mount the file system
+    mount:
+      path: "/oradba"
+      src: "/dev/vg01/oraclevol" 
+      fstype: "xfs"
+      state: mounted
+  - name: create dba group
+    group:
+      name: "dba"
+      state: present
+  - name: create oracle user
+    user:
+      name: "oracle"
+      password: '$6$.8EKrfPwYS0A3.1L$UFzFrAfzqLR5gL99YxclW9UCujZNmRdrrY21pElpAqU1n7Fqno5zu68XSkw9ZwSCsoXdMIqw9pU5eVI0ao4fs0'
+      groups: "dba"
+      state: present
+      shell: "/bin/bash"
+      system: no # it is not a system user
+      createhome: yes
+      home: /home/oracle
+  - name: To modify ownership of mountpoint directory(/oradba)
+    shell: "chown oracle:dba /oradba"

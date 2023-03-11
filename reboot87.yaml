@@ -1,0 +1,9 @@
+- name: Reboot Machines
+  hosts: all
+  tasks:
+  - name: reboot hosts
+    reboot:
+      msg: "reboot by Ansible controller"
+      pre_reboot_delay: 5
+      post_reboot_delay: 10
+      test_command: "whoami"  

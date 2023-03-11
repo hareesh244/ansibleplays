@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+  - package: "name=httpd state=present"
+  - command: mkdir /tmp/test

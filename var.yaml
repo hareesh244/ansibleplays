@@ -1,0 +1,7 @@
+- hosts: all
+  vars:
+    var_time: "{{ lookup('pipe', 'date +%Y-%m-%d@$H:%M:%S') }}"
+  tasks:
+    - debug: var=var_time
+    - command: sleep 2
+    - debug: var=var_time

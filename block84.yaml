@@ -1,0 +1,20 @@
+- name: block and rescue ansible playbook
+  hosts: all
+  tasks: 
+  - name: i am block
+    block:
+    - name: install httpd
+      yum: 
+        name: httpd123
+        state: present
+    - name: copy cotent
+      copy: 
+        content: "i am hari" 
+        dest: "/var/www/html/index.html"
+    - name: start service
+      service:
+        name: httpd
+        state: started
+    rescue:      
+    - debug: 
+        msg: "Actual code(block) is not running.."  

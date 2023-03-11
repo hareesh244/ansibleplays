@@ -1,0 +1,7 @@
+- hosts: all
+  vars_files:
+  - myvar.yaml  
+  tasks:
+  - package:
+      name: "{{ p }}" 
+      state: present 

@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+  - command: date
+  - package: "name=vim state=present"
+    register: x
+  - debug: 
+      var: x.rc
+  - debug:
+      msg: "vim package installed successfully"
+    when: not x.failed

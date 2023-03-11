@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+  - command: date
+  - package: "name=hari state=present"
+    register: x
+  - debug: 
+      var: x
+  - debug:
+      msg: "vim package installed successfully"
+    when: not x.failed
