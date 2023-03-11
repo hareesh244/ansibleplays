@@ -1,0 +1,4 @@
+- hosts: prod
+  tasks: 
+  - debug:
+      msg: "Welcome to Devops World"

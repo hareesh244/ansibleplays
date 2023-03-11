@@ -1,0 +1,5 @@
+- hosts: 3.222.185.16
+  tasks:
+  - name: List of groups the current host is part of
+    debug:
+      var: group_names

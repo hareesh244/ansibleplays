@@ -1,0 +1,14 @@
+- hosts: web
+  vars:
+  - users:
+    - charan
+    - sivaji
+    - rao
+    - rasul
+    - suresh
+    - satish
+    - kishore  
+  tasks:
+  - template:
+      src: hello.txt
+      dest: /tmp/hello.txt

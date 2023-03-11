@@ -1,0 +1,8 @@
+- hosts: all
+  vars:
+  - dosetup: true
+  tasks:
+  - package:
+      name: "httpd"
+      state: present
+    when: ( ( ( ansible_os_family == "RedHat" ) or ( ansible_os_family == "Ubuntu" ) ) and ( ansible_memfree_mb >= 400 ) ) and dosetup

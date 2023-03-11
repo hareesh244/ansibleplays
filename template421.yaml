@@ -1,0 +1,14 @@
+- hosts: web
+  vars:
+  - users:
+    - charan
+    - sivaji
+    - rao
+    - rasul
+    - suresh
+    - satish
+    - kishore  
+  tasks:
+  - template:
+      src: hello1.j2
+      dest: /tmp/hello1.j2

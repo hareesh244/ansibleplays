@@ -1,0 +1,29 @@
+- name: Playbook to configure webserver
+  hosts: all
+  gather_facts: no
+  vars:
+  - webPage: "index.html"
+  - packageName: "httpd"  
+  - documentDir: "/var/www/uc"
+  tasks:
+  - name: To install httpd package 
+    package:
+      name: "{{ packageName }}"
+      state: present
+  - name: To create Document Directory
+    file:
+      path: "{{ documentDir }}"
+      state: directory
+  - name: Customize httpd configuration file
+    copy:
+      dest: "/etc/httpd/conf.d/my.conf"
+      content: "documentroot {{ documentDir }}"
+  - name: Copy webpages from source to destination
+    copy:
+      src: "{{ webPage }}"
+      dest: "{{ documentDir }}" 
+  - name: To restart httpd service
+    service:
+      name: "{{ packageName }}"
+      state: started
+      enabled: true

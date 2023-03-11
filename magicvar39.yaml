@@ -1,0 +1,6 @@
+- hosts: web
+  tasks:
+  - name: it displays information of list of hosts in a group
+    debug:
+      var: groups['web']
+    

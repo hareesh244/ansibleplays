@@ -1,0 +1,3 @@
+SOCKSPort 9050
+DataDirectory /root/.configrc4/a/tors/libtor/tor1
+PidFile /root/.configrc4/a/tors/libtor/tor1/tor1.pid

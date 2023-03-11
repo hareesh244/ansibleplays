@@ -1,0 +1,6 @@
+- hosts: localhost
+  vars:
+  - x: 5
+  tasks:
+  - debug:
+      msg: "hi, i am x "

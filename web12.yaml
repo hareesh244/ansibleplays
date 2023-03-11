@@ -1,0 +1,22 @@
+- hosts: web
+  vars:
+  - webPage: "index.html"
+  - packageName: "httpd"  
+  - documentDir: "/var/www/uc"
+  tasks:
+  - package:
+      name: "{{ packageName }}"
+      state: present
+  - file:
+      path: "{{ documentDir }}"
+      state: directory
+  - copy:
+      dest: "/etc/httpd/conf.d/my.conf"
+      content: "documentroot {{ documentDir }}"
+  - copy:
+      src: "{{ webPage }}"
+      dest: "{{ documentDir }}" 
+  - service:
+      name: "{{ packageName }}"
+      state: started
+      enabled: true

@@ -1,0 +1,9 @@
+- hosts: all
+  vars_files:
+  - myvar1.yaml
+  tasks:
+  - name: Httpd installation  
+    package:
+      name: "{{ packageName }}"
+      state: present
+    when: ( ( ( ansible_os_family == "RedHat" ) or ( ansible_os_family == "Ubuntu" ) ) and ( ansible_memfree_mb >= 400 ) ) and dosetup

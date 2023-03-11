@@ -12,7 +12,7 @@
 ~H
 # Command Line History (newest to oldest):
 :wq!
-|2,0,1678503785,,"wq!"
+|2,0,1678515636,,"wq!"
 :q!
 |2,0,1678502654,,"q!"
 
@@ -61,34 +61,46 @@
 |3,0,36,0,1,0,1678501010,"t"
 
 # File marks:
-'0  1  33  ~/inventory
-|4,48,1,33,1678503785,"~/inventory"
-'1  1  22  ~/patching.yaml
-|4,49,1,22,1678503567,"~/patching.yaml"
-'2  4  5  ~/patching.yaml
-|4,50,4,5,1678502654,"~/patching.yaml"
-'3  3  5  ~/patching.yaml
-|4,51,3,5,1678502654,"~/patching.yaml"
-'4  31  10  ~/demo1/site.yml
-|4,52,31,10,1678502002,"~/demo1/site.yml"
+'0  1  9  ~/.gitignore
+|4,48,1,9,1678515636,"~/.gitignore"
+'1  1  33  ~/inventory
+|4,49,1,33,1678503785,"~/inventory"
+'2  1  22  ~/patching.yaml
+|4,50,1,22,1678503567,"~/patching.yaml"
+'3  4  5  ~/patching.yaml
+|4,51,4,5,1678502654,"~/patching.yaml"
+'4  3  5  ~/patching.yaml
+|4,52,3,5,1678502654,"~/patching.yaml"
 '5  31  10  ~/demo1/site.yml
-|4,53,31,10,1678501126,"~/demo1/site.yml"
-'6  3  14  ~/demo1/inventory
-|4,54,3,14,1678501023,"~/demo1/inventory"
+|4,53,31,10,1678502002,"~/demo1/site.yml"
+'6  31  10  ~/demo1/site.yml
+|4,54,31,10,1678501126,"~/demo1/site.yml"
 '7  3  14  ~/demo1/inventory
-|4,55,3,14,1678501015,"~/demo1/inventory"
-'8  6  0  ~/demo1/site.yml
-|4,56,6,0,1678500844,"~/demo1/site.yml"
+|4,55,3,14,1678501023,"~/demo1/inventory"
+'8  3  14  ~/demo1/inventory
+|4,56,3,14,1678501015,"~/demo1/inventory"
 '9  6  0  ~/demo1/site.yml
 |4,57,6,0,1678500844,"~/demo1/site.yml"
 
 # Jumplist (newest first):
+-'  1  9  ~/.gitignore
+|4,39,1,9,1678515636,"~/.gitignore"
+-'  1  33  ~/inventory
+|4,39,1,33,1678503785,"~/inventory"
 -'  1  33  ~/inventory
 |4,39,1,33,1678503785,"~/inventory"
 -'  1  22  ~/patching.yaml
 |4,39,1,22,1678503567,"~/patching.yaml"
 -'  1  22  ~/patching.yaml
 |4,39,1,22,1678503567,"~/patching.yaml"
+-'  1  22  ~/patching.yaml
+|4,39,1,22,1678503567,"~/patching.yaml"
+-'  1  22  ~/patching.yaml
+|4,39,1,22,1678503567,"~/patching.yaml"
+-'  4  5  ~/patching.yaml
+|4,39,4,5,1678502955,"~/patching.yaml"
+-'  4  5  ~/patching.yaml
+|4,39,4,5,1678502955,"~/patching.yaml"
 -'  4  5  ~/patching.yaml
 |4,39,4,5,1678502955,"~/patching.yaml"
 -'  4  5  ~/patching.yaml
@@ -97,6 +109,18 @@
 |4,39,3,5,1678502654,"~/patching.yaml"
 -'  3  5  ~/patching.yaml
 |4,39,3,5,1678502654,"~/patching.yaml"
+-'  3  5  ~/patching.yaml
+|4,39,3,5,1678502654,"~/patching.yaml"
+-'  3  5  ~/patching.yaml
+|4,39,3,5,1678502654,"~/patching.yaml"
+-'  32  5  ~/patching.yaml
+|4,39,32,5,1678502148,"~/patching.yaml"
+-'  31  5  ~/patching.yaml
+|4,39,31,5,1678502148,"~/patching.yaml"
+-'  32  5  ~/patching.yaml
+|4,39,32,5,1678502148,"~/patching.yaml"
+-'  31  5  ~/patching.yaml
+|4,39,31,5,1678502148,"~/patching.yaml"
 -'  32  5  ~/patching.yaml
 |4,39,32,5,1678502148,"~/patching.yaml"
 -'  31  5  ~/patching.yaml
@@ -122,6 +146,34 @@
 -'  31  10  ~/demo1/site.yml
 |4,39,31,10,1678502002,"~/demo1/site.yml"
 -'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678502002,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678502002,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678502002,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678502002,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678502002,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678502002,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678502002,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678502002,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678501126,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678501126,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678501126,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678501126,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678501126,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678501126,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
 |4,39,31,10,1678501126,"~/demo1/site.yml"
 -'  31  10  ~/demo1/site.yml
 |4,39,31,10,1678501126,"~/demo1/site.yml"
@@ -137,6 +189,42 @@
 |4,39,31,10,1678501126,"~/demo1/site.yml"
 -'  31  10  ~/demo1/site.yml
 |4,39,31,10,1678501126,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678501126,"~/demo1/site.yml"
+-'  31  10  ~/demo1/site.yml
+|4,39,31,10,1678501126,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
+-'  3  2  ~/demo1/site.yml
+|4,39,3,2,1678501042,"~/demo1/site.yml"
 -'  3  2  ~/demo1/site.yml
 |4,39,3,2,1678501042,"~/demo1/site.yml"
 -'  3  2  ~/demo1/site.yml
@@ -195,96 +283,15 @@
 |4,39,5,0,1678501040,"~/demo1/site.yml"
 -'  5  0  ~/demo1/site.yml
 |4,39,5,0,1678501040,"~/demo1/site.yml"
--'  5  0  ~/demo1/site.yml
-|4,39,5,0,1678501040,"~/demo1/site.yml"
--'  5  0  ~/demo1/site.yml
-|4,39,5,0,1678501040,"~/demo1/site.yml"
--'  5  0  ~/demo1/site.yml
-|4,39,5,0,1678501040,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  6  0  ~/demo1/site.yml
-|4,39,6,0,1678501027,"~/demo1/site.yml"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
--'  3  14  ~/demo1/inventory
-|4,39,3,14,1678501023,"~/demo1/inventory"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1678515631	0
+	"	1	9
+	^	1	10
+	.	1	9
+	+	1	9
 
 > ~/inventory
 	*	1678503783	0
@@ -491,10 +498,3 @@
 	"	2	0
 	.	3	0
 	+	3	0
-
-> ~/demo/host_vars/node2
-	*	1678462771	0
-	"	1	19
-	^	1	20
-	.	1	19
-	+	1	19

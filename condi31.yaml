@@ -1,0 +1,6 @@
+- hosts: all
+  tasks:
+  - package:
+      name: "httpd"
+      state: present
+    when: ( ansible_os_family == "RedHat" ) or ( ansible_os_family == "Ubuntu" )

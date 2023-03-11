@@ -1,0 +1,4 @@
+- hosts: prod
+  tasks:
+  - debug:
+      var: ansible_default_ipv4

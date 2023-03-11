@@ -1,0 +1,7 @@
+- hosts: localhost
+  vars:
+  - x: 44
+  tasks:
+  - debug:
+      msg: "hi my name is hari x"
+

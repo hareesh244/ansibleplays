@@ -1,0 +1,4 @@
+- hosts: prod
+  tasks:
+  - debug:
+      var: ansible_python.version.major

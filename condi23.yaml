@@ -1,0 +1,7 @@
+- hosts: all
+  vars: 
+  - x: true
+  tasks:
+  - debug: 
+      msg: "Hello, Welcome to devops world!!"
+    when: x

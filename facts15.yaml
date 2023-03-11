@@ -1,0 +1,9 @@
+- hosts: all
+  gather_facts: yes
+  tasks:
+  - name: to retreive the information using facts
+    debug:
+      msg: 
+      - "os system is {{ ansible_distribution }}"
+      - "free memory is {{ ansible_memfree_mb }}"
+      - "date is {{ ansible_date_time.date }}"

@@ -1,0 +1,7 @@
+- hosts: web
+  vars:
+  - n: "rama"
+  tasks:
+  - copy:
+      src: hello.txt
+      dest: /tmp/hello.txt
