@@ -1,4 +1,4 @@
-- hosts: web
+- hosts: all
   vars:
   - webpage: "index.html"
   - packagename: "httpd"  
