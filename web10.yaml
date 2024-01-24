@@ -1,7 +1,7 @@
 - hosts: all
   vars:
   - webpage: "index.html"
-  - packagename: "httpd1"  
+  - packagename: "httpd"  
   tasks:
   - package:
       name: "{{ packagename }}"
