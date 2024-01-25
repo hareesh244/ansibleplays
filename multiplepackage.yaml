@@ -1,5 +1,5 @@
 - name: To run multiple softwares
-  hosts: dev
+  hosts: test
   tasks:
   - name: Install package1
     package:
